@@ -1,0 +1,5 @@
+g/folder is for games not the actual
+files for the games but it is for the 
+game page where there is a game window 
+and controls like fullscreen and just 
+a game page

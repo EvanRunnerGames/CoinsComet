@@ -1,0 +1,3 @@
+gf/folder is for
+game files like the actual images
+or textures or code for games
