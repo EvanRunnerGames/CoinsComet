@@ -9,6 +9,7 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.842);
+    overflow-x: hidden;
 }
 
 * {
@@ -29,7 +30,7 @@ header {
 }
 
 footer {
-    background-color: black !important;
+    background-color: #171a21 !important;
     width: 100%;
     height: 325px;
     padding-top: 25px;
@@ -78,7 +79,6 @@ footer {
     height: 38px;
     width: 230px;
     font-size: 17px;
-    border-radius: 4px;
     padding-left: 11px;
 }
 
@@ -95,7 +95,7 @@ footer {
 
 .nav-top {
     height: 80px;
-    background-color: #0c002e;
+    background-color: #181c24 !important;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -105,6 +105,7 @@ footer {
 .nav-categories {
     height: 60px;
     background: #fff;
+    background-color: #405c8c;
     width: 100%;
     z-index: 990;
     box-sizing: border-box;
@@ -116,17 +117,20 @@ footer {
 }
 
 .header-section {
-    color: #2c3e50;
-    border-radius: 15px;
-    border: #ccc solid 1px;
-    
-    padding: 12px;
-    margin: 10px;
+    font-weight: bolder;
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .header-section:hover {
     border-color: transparent;
     background-color: #2296ff;
+    background: linear-gradient(to right ,#307cbc, #405c8c);
     cursor: pointer;
     color: #fff;
 }
@@ -179,7 +183,7 @@ footer {
     background-color: #eee;
   margin-right: 10px;
   padding: 8px 16px;
-  border-radius: 15px;
+
   display: inline-block;
   margin-bottom: 10px;
   font-size: 16px;
@@ -198,7 +202,7 @@ footer {
     justify-content: center;
     align-items: center;
     color: #fff !important;
-    background-color: #1e272e;
+    background-color: #202c3c;
     height: 69px;
 }
 
@@ -229,20 +233,13 @@ footer {
     align-items: center;
 }
 
-.list-title-inter {
-    background-color: white;
-    position: absolute;
-    margin-top:15px;
-    padding-left: 8px;
-    padding-right: 8px;
-}
+
 
 .list-game {
     margin-bottom: 20px;
     margin-right: 15px;
-    box-shadow: 0 1px 6px 0 rgba(50,50,50,.25);
-    background: linear-gradient(#fff278, #f9b428) !important;
-    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
     padding: 5px;
     width: 170px;
     height: 205px;
@@ -255,48 +252,47 @@ footer {
     transition: all 0.3s ease-in-out;
 }
 
-.list-game:hover {
-    transform: scale(1.07);
+.list-game:hover .list-content {
+    background: linear-gradient(to right, #303444, #646d77, #303444);
 }
 
 .list-thumbnail {
-    width: 160px;
-    height: 160px;
+    width: 170px;
+    height: 170px;
 }
 
 .list-content {
-    margin: 8px;
+    background: linear-gradient(to right, #303444, #404454, #303444);
+    height: 35px;
     color: white;
     font-weight: bolder;
-    width: 100%;
+    width: 170px !important;
     text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    transform: translateY(15px);
-    opacity: 0;
+
     transition: all 0.3s ease-in-out;
 }
 
-.list-game:hover .list-content {
-    opacity: 1;
-    transform: translateY(0px);
+.list-game:hover {
+    transform: scale(1.05) translateY(5px);
 }
 
-.list-cs {
-    background: linear-gradient(#a88df8, #a57ded) !important;
+.list-game:hover .list-shimmer {
+    height: 130px;
+    transform: rotate(30deg) translateY(-50px) !important;
+    opacity: 0.6;
+    width: 1000px;
 }
 
-.list-cs:hover {
-    transform: scale(1) !important;
-}
-
-.list-cs .list-content {
-    color: white !important;
-    font-weight: bolder;
-    text-decoration: none !important;
-}
-
-.list-cs .list-thumbnail {
-    display: none;
+.list-shimmer {
+    width: 1000px;
+    height: 60px;
+    transform: rotate(30deg) translateY(-50px) !important;
+    position: absolute;
+    top: 0;
+    opacity: 0.3;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
 }
