@@ -1,19 +1,7 @@
 // Backlinks Go Here!
 const backlinksList= [{
-  link: "https://ucbg.github.io/category/clicker.html",
-  text: "TUNNEL",
-}, {
-  link: "https://ucbg.github.io/category/io.html",
-  text: "JUMP",
-}, {
-  link: "https://ucbg.github.io/category/running.html",
-  text: "RUN",
-}, {
-  link: "https://ucbg.github.io/category/parkour.html",
-  text: "Drift Boss",
-}, {
-  link: "https://ucbg.github.io/category/trending.html",
-  text: "Madalin Stunt Cars",
+  link: "#",
+  text: "Press Z to start",
 },];
 
 function inFrame () {
@@ -44,7 +32,7 @@ if (inFrame()) {
 let backlinksHTML= "";
 backlinksHTML= "<ul style=\"color: #ffffff; padding: 0px; margin: 0px; font-size:18px;\">";
 backlinksHTML+= "<li style=\"padding: 10px; display: inline-block; float: left;\">"+
-    "<a style=\"padding: 5px;color: #ffffff; text-decoration: none; \" onMouseOver=\"this.style.backgroundColor='#0C1E40';\" onMouseOut=\"this.style.backgroundColor='';\" href= \"//slopegame.gitlab.io\">"+ decodeURIComponent(escape("\xF0\x9F\x8F\xA0")) +" SlopeGame</a>"+
+    "<a style=\"padding: 5px;color: #ffffff; text-decoration: none; \" onMouseOver=\"this.style.backgroundColor='#0C1E40';\" onMouseOut=\"this.style.backgroundColor='';\" href= \"//ubg98.github.io\">"+ decodeURIComponent(escape("\xF0\x9F\x8F\xA0")) +" ubg98</a>"+
     "</li>";
 
 for (let i=0; i< backlinksList.length; i++) {
